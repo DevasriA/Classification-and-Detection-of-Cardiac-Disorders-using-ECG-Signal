@@ -1,67 +1,49 @@
- Classification and Detection of Cardiac Disorders using ECG Signals
-📝 Overview
-This project focuses on simplifying the early detection and classification of cardiac disorders using ECG signals. Cardiovascular diseases, such as arrhythmia, atrial fibrillation, and congestive heart failure, can be life-threatening if not diagnosed in time. We aim to leverage machine learning and deep learning techniques to accurately detect these abnormalities, thereby supporting medical professionals in timely diagnosis and treatment.
+# Classification and Detection of Cardiac Disorders using ECG Signal
 
-🎯 Objective
-To build a robust system that classifies ECG signals into normal and abnormal patterns and detects specific cardiac disorders using machine learning (ML) and deep learning (DL) algorithms.
+Cardiovascular diseases remain one of the leading causes of death globally. Accurate and early detection of cardiac abnormalities is crucial for timely medical intervention. Traditional diagnosis using ECG signals can be time-consuming and may depend on expert interpretation.
 
-🧠 Techniques Used
-Machine Learning Algorithms:
+In this project, we developed a machine learning and deep learning-based system to classify and detect cardiac disorders using ECG signal data. The system aims to assist healthcare professionals by providing an automated and reliable tool for early diagnosis.
 
-Support Vector Machine (SVM)
+We used a dataset sourced from Kaggle, consisting of 1,200 ECG records with 54 pre-processed features. The dataset includes multiple cardiac conditions such as arrhythmia, atrial fibrillation, congestive heart failure, and normal sinus rhythms.
 
-Random Forest
 
-Naive Bayes
+## Our methodology involved:
 
-Deep Learning:
+Data Collection & Preprocessing: Handling missing values, normalization, feature extraction
 
-Convolutional Neural Network (CNN)
+ML Algorithms: Support Vector Machine (SVM), Random Forest, and Naive Bayes
 
-📊 Dataset
-Source: Kaggle
+Deep Learning: Convolutional Neural Network (CNN) for higher-level pattern recognition
 
-Size: 1,200 ECG records with 54 features
+Accuracy Achieved:
 
-Classes: Arrhythmia, Atrial Fibrillation, Congestive Heart Failure, Normal Sinus Rhythm
+SVM: 92.6%
 
-Preprocessing: Handled missing values, normalization, and applied Modulus Maxima Vehicular Packet Transform.
+Random Forest: 97.6%
 
-⚙️ Workflow
-Data Collection
+Naive Bayes: 86.6%
 
-Preprocessing
+CNN: 99.58% (highest)
 
-Feature Visualization
 
-Model Training (ML + DL)
+Evaluation Metrics
+   - Accuracy
+   - Sensitivity
+   - Specificity
+   - F1-Score
 
-Evaluation & Validation
 
-Performance Comparison
+Tools & Technologies
+- Python
+- Scikit-learn
+- Keras / TensorFlow
+- NumPy
+- Pandas
+- Matplotlib / Seaborn
 
-📈 Results
-Model	Accuracy
-SVM	92.6%
-Random Forest	97.6%
-Naive Bayes	86.6%
-CNN	99.58%
+The deep learning model (CNN) also visualized training and validation accuracy/loss and performed multi-class classification with robust prediction capability.
 
-🔧 Libraries Used
-NumPy
+This project highlights how integrating AI techniques into medical diagnostics can enhance speed, accuracy, and scalability in identifying life-threatening heart conditions.
 
-Pandas
 
-Scikit-learn
-
-TensorFlow / Keras
-
-Matplotlib
-
-📚 Future Scope
-Integration with real-time ECG monitoring devices.
-
-Deployment as a web/mobile application for real-time diagnosis.
-
-Explore more ensemble learning methods for better generalization.
 
